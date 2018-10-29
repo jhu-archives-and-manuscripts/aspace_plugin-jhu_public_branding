@@ -1,0 +1,34 @@
+<div class="navbar" id="jhu-main-nav">
+  <div class="navbar-inner">
+    <div class="container">
+      <span class="jhu-nav-heading" id="jhu-nav-heading-text" data-toggle="collapse" data-target="#jhu-navbar">
+        <%= I18n.t("plugins.jhu_public_branding.jhu_nav.menu_heading") %>
+      </span>
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#jhu-navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="nav-collapse collapse" id="jhu-navbar">
+        <div class="container">
+          <ul class="nav">
+            <% I18n.t("plugins.jhu_public_branding.jhu_nav.links").each do |site| %>
+                <li><%= link_to site[:label], site[:link] %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div><!-- /.nav-collapse -->
+    </div>
+  </div><!-- /navbar-inner -->
+</div>
+
+<div class="container">
+  <div class="jhu-branding-org">
+    <%#= image_tag "images/libraries.logo.small.horizontal.blue.png", :alt => I18n.t("brand.title") %>
+    <img src="/assets/images/libraries.logo.small.horizontal.blue.png" alt="Johns Hopkins University logo">
+  </div>
+  <div class="jhu-branding-app pull-right">
+    <%#= image_tag "archivesspace/archivesspace.png", :alt => I18n.t("brand.title") %>
+    <%= I18n.t("plugins.jhu_public_branding.brand.applabel") %>
+  </div>
+</div>
