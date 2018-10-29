@@ -1,0 +1,36 @@
+en:
+  brand:
+    title: Johns Hopkins University Libraries Archives Public Interface
+    home: Home
+    welcome_message: Welcome to %{service_name}
+    welcome_search_label: >
+      Search the libraries' collection guides for university records and manuscript collections.
+
+  plugins:
+    jhu_public_branding:
+      brand:
+        applabel: ArchivesSpace
+
+      instrepo:
+        role: institutional repository
+        name:
+          short: JScholarship
+          long: JScholarship
+        url: https://jscholarship.library.jhu.edu/
+
+      datarepo:
+        role: data repository
+        name:
+          short: The JHU Data Archive
+          long: The Johns Hopkins University Data Archive
+        url: https://archive.data.jhu.edu/
+
+      levycoll:
+        role: collection
+        name:
+          short: The Levy Sheet Music Collection
+          long: The Lester S. Levy Sheet Music Collection
+        url: http://levysheetmusic.mse.jhu.edu/
+
+      digicoll:
+        heading: 'For access to our digital collections, please visit:'

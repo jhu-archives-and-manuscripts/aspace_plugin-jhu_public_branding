@@ -1,8 +1,10 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <h2><%= t('brand.welcome_head') %></h2>
-      <div> <%= t('brand.welcome_message').html_safe %> </div>
+    <h1><%= t('brand.welcome_message', :service_name => I18n.t("plugins.jhu_public_branding.brand.applabel")).html_safe %></h1>
+    <br />
+    <p><%= I18n.t("brand.welcome_search_label").html_safe %></p>
+    <br />
   </div>
 </div>
 
@@ -23,3 +25,30 @@
             ["#{t('search_results.filter.identifier')}", 'four_part_id']
            ]
     } %>
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <div>
+      <hr />
+      <p><%= I18n.t("plugins.jhu_public_branding.digicoll.heading").html_safe %></p>
+      <ul>
+        <li>
+          <%= link_to(I18n.t("plugins.jhu_public_branding.instrepo.name.long").html_safe, I18n.t("plugins.jhu_public_branding.instrepo.url")) %>
+          (<%= I18n.t("plugins.jhu_public_branding.instrepo.role").html_safe %>)
+        </li>
+        <li>
+          <%= link_to(I18n.t("plugins.jhu_public_branding.levycoll.name.long").html_safe, I18n.t("plugins.jhu_public_branding.levycoll.url")) %>
+          (<%= I18n.t("plugins.jhu_public_branding.levycoll.role").html_safe %>)
+        </li>
+        <li>
+          <%= link_to(I18n.t("plugins.jhu_public_branding.datarepo.name.long").html_safe, I18n.t("plugins.jhu_public_branding.datarepo.url")) %>
+          (<%= I18n.t("plugins.jhu_public_branding.datarepo.role").html_safe %>)
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="span4">
+
+  </div>
+</div>
