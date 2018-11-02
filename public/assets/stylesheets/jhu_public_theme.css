@@ -1,0 +1,150 @@
+
+
+.site-branding-org {
+    float: left;
+    width: 300px;
+    height: 70px;
+    overflow: hidden;
+/*    margin: 0 0 0 -25px;
+    padding: 10px 0 10px;
+    vertical-align: middle;
+    display: inline-block; */
+
+    position: relative
+}
+.site-branding-org img {
+    max-width: 200px;
+/*    max-height: 70px;
+    overflow: hidden;
+    margin: -28px 0 0 -30px; */
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto auto auto 0;
+}
+.site-branding-app {
+    float: left;
+    width: 250px;
+    height: 70px;
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+    /* margin: 5px 15px 0 5px; */
+    vertical-align: middle;
+    display: none;
+    font-size: x-large;
+    text-align: left;
+    justify-content: flex-end;
+    align-items: center;
+    color: #555;
+}
+@media (min-width: 600px) {
+    .site-branding-app {
+        float: right;
+        display: flex;
+        text-align: right;
+    }
+}
+
+
+
+#site-main-nav .navbar-nav > li > a {
+    padding-top: 11px !important;
+    /*    padding-bottom: 0 !important; */
+    height: 40px;
+}
+#site-main-nav .navbar-brand {
+    padding-top: 9px !important;
+    /*    padding-bottom: 0 !important; */
+    height: 40px;
+}
+
+/
+/* site navigation styling */
+
+#site-main-nav {
+    font-family: 'Titling-Gothic', sans-serif;
+    background: #002D72;
+    color: #BBB;
+    border-color: #002D72;
+}
+#site-main-nav .navbar {
+    background: #002D72;
+    border-color: #002D72;
+    color: #BBB;
+    border-radius: 0;
+    margin-bottom: 0;
+
+    min-height:42px !important;
+}
+#site-main-nav .navbar-toggle {
+    background: #BBB;
+    border-color: #BBB;
+
+    /* padding: 0 0; */
+    /* vertical-align: middle; */
+    margin-top: 3px;
+    margin-bottom: 0;
+
+}
+
+#site-main-nav .btn-navbar {
+    height: 32px;
+    width: 33px;
+    padding: 7px 10px;
+    border: 1px;
+    margin: 5px 0px 5px 5px;
+}
+
+#site-main-nav .navbar-toggle .icon-bar {
+    display: block;
+    width: 18px;
+    height: 1px;
+
+    /* margin-top: 3px; */
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.25)
+}
+
+
+#site-main-nav .navbar-brand {
+    color: #BBB;
+    font-size: 15.5px;
+    padding-top: 9px;
+}
+
+
+#site-main-nav .nav > li {
+    font-family: 'Gentona', sans-serif;
+    color: #BBB;
+}
+#site-main-nav .navbar-nav > li a {
+    color: #BBB;
+    text-shadow: none;
+    font-weight: bold;
+    font-size: 13px !important;
+}
+#site-main-nav .nav > li a:hover {
+    color: #EEE;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    #site-main-nav .navbar-brand {
+        display: none;
+    }
+
+    #site-main-nav .navbar-nav {
+        align: middle;
+    }
+}
+@media (max-width: 767px) {
+    #site-main-nav .navbar-brand:hover {
+        color: #DDD;
+        cursor: pointer;
+    }
+}
+
