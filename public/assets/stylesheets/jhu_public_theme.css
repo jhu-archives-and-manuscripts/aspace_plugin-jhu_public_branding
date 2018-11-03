@@ -1,23 +1,24 @@
 
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+    font-family: 'Titling-Gothic', sans-serif;
+}
+
+body {
+    background: none;
+    font-family: 'Gentona', sans-serif;
+    letter-spacing: 1px;
+}
+
 
 .site-branding-org {
     float: left;
     width: 300px;
     height: 70px;
     overflow: hidden;
-/*    margin: 0 0 0 -25px;
-    padding: 10px 0 10px;
-    vertical-align: middle;
-    display: inline-block; */
-
     position: relative
 }
 .site-branding-org img {
     max-width: 200px;
-/*    max-height: 70px;
-    overflow: hidden;
-    margin: -28px 0 0 -30px; */
-
     position: absolute;
     top: 0;
     right: 0;
@@ -50,18 +51,8 @@
 
 
 
-#site-main-nav .navbar-nav > li > a {
-    padding-top: 11px !important;
-    /*    padding-bottom: 0 !important; */
-    height: 40px;
-}
-#site-main-nav .navbar-brand {
-    padding-top: 9px !important;
-    /*    padding-bottom: 0 !important; */
-    height: 40px;
-}
 
-/
+
 /* site navigation styling */
 
 #site-main-nav {
@@ -70,6 +61,13 @@
     color: #BBB;
     border-color: #002D72;
 }
+#navigation {
+    font-family: 'Titling-Gothic', sans-serif;
+    color: #002D72;
+    border-color: #002D72;
+}
+
+
 #site-main-nav .navbar {
     background: #002D72;
     border-color: #002D72;
@@ -79,17 +77,8 @@
 
     min-height:42px !important;
 }
-#site-main-nav .navbar-toggle {
-    background: #BBB;
-    border-color: #BBB;
 
-    /* padding: 0 0; */
-    /* vertical-align: middle; */
-    margin-top: 3px;
-    margin-bottom: 0;
-
-}
-
+/* not using... use .navbar-toggle, instead
 #site-main-nav .btn-navbar {
     height: 32px;
     width: 33px;
@@ -97,13 +86,29 @@
     border: 1px;
     margin: 5px 0px 5px 5px;
 }
+*/
+.navbar-toggle {
+    background: #BBB;
+    border-color: #BBB;
 
-#site-main-nav .navbar-toggle .icon-bar {
+}
+#site-main-nav .navbar-toggle {
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+#navigation .navbar-toggle {
+    border-color: #002D72;
+}
+#navigation .navbar-toggle:hover {
+    background-color: #eee;
+}
+
+
+
+.navbar-toggle .icon-bar {
     display: block;
     width: 18px;
     height: 1px;
-
-    /* margin-top: 3px; */
     background-color: #f5f5f5;
     box-shadow: 0 1px 0 rgba(0,0,0,0.25)
 }
@@ -112,13 +117,25 @@
 #site-main-nav .navbar-brand {
     color: #BBB;
     font-size: 15.5px;
-    padding-top: 9px;
+    padding-top: 9px !important;
+    height: 40px;
+}
+#navigation .navbar-brand {
+    color: #002D72;
+    font-size: 15.5px;
+    display: none;
 }
 
 
-#site-main-nav .nav > li {
+
+#site-main-nav .navbar-nav > li {
     font-family: 'Gentona', sans-serif;
     color: #BBB;
+}
+#site-main-nav .navbar-nav > li > a {
+    padding-top: 11px !important;
+    /*    padding-bottom: 0 !important; */
+    height: 40px;
 }
 #site-main-nav .navbar-nav > li a {
     color: #BBB;
@@ -126,10 +143,12 @@
     font-weight: bold;
     font-size: 13px !important;
 }
-#site-main-nav .nav > li a:hover {
+#site-main-nav .navbar-nav > li a:hover {
     color: #EEE;
     text-decoration: none;
 }
+
+
 
 
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -142,9 +161,28 @@
     }
 }
 @media (max-width: 767px) {
-    #site-main-nav .navbar-brand:hover {
-        color: #DDD;
+    .navbar-brand:hover {
+        font-weight: bold;
         cursor: pointer;
     }
+    #site-main-nav .navbar-brand:hover {
+        color: #EEE;
+    }
+    #navigation .navbar-brand {
+        display: inline-block;
+    }
+    #navigation .navbar-brand:hover {
+        cursor: pointer;
+    }
+
 }
+
+
+:not(path):not(g) { /*
+    color:                    hsla(210, 100%, 100%, 0.9) !important;
+    background:               hsla(210, 100%,  50%, 0.5) !important;
+    outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+
+    box-shadow: none !important;
+*/ }
 
