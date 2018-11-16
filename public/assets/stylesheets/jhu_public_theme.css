@@ -19,6 +19,27 @@ a {
     border-radius: 10px;
 }
 
+/* the following chunk works fine for search results */
+#content .col-sm-9 {
+    float: right;
+}
+
+#sidebar.resizable-sidebar .resizable-sidebar-handle {
+    top: 0;
+    right: 0;
+    left: unset;
+}
+
+/*
+- search/collection org id="sidebar" class="col-sm-3 sidebar sidebar-container resizable-sidebar"
+- filter results:
+<div class="col-sm-3">
+    <a name="filter" title="Filter Results"></a>
+
+<div class="filters">
+</div>
+*/
+
 .site-branding-org {
     float: left;
     width: 300px;
