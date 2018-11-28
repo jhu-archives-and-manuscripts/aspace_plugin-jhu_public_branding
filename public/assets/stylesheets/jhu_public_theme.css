@@ -19,7 +19,7 @@ a {
     border-radius: 10px;
 }
 
-/* the following chunk works fine for search results */
+/* the following chunk works fine for search results
 #content .col-sm-9 {
     float: right;
 }
@@ -29,7 +29,7 @@ a {
     right: 0;
     left: unset;
 }
-
+*/
 /*
 - search/collection org id="sidebar" class="col-sm-3 sidebar sidebar-container resizable-sidebar"
 - filter results:

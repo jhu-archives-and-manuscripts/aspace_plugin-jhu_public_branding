@@ -31,7 +31,7 @@ ResizableSidebar.prototype.bind_events = function() {
     var self = this;
 
     var min_sidebar_width = 200;
-    var min_content_width = 500;
+    var min_content_width = 300;
     var i_scrollbar_width = 20;
 
     var content_left = {
