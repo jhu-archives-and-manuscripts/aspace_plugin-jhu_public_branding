@@ -19,47 +19,47 @@ a {
     border-radius: 10px;
 }
 
+
 .site-branding-org {
-    float: left;
-    width: 300px;
-    height: 70px;
-    overflow: hidden;
-    position: relative
+  float: left;
+  width: 240px;
+  height: 90px;
+  overflow: hidden;
+  padding: 10px 0 10px;
+  margin: 5px 5px 0 5px;
+  vertical-align: middle;
+  display: inline-block
 }
+
 .site-branding-org img {
-    max-width: 200px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto auto auto 0;
+  max-width: 300px;
+  overflow: hidden;
+  margin: -28px 0 0 -30px
 }
+
+.site-branding-app-text {
+  border-left: 1px solid #000;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding: 5px 0 10px 30px;
+  float: left;
+}
+
 .site-branding-app {
-    float: left;
-    width: 250px;
-    height: 70px;
-    overflow: hidden;
-    padding: 10px 0 10px 0;
-    /* margin: 5px 15px 0 5px; */
-    vertical-align: middle;
-    display: none;
-    font-size: x-large;
-    text-align: left;
-    justify-content: flex-end;
-    align-items: center;
-    color: #555;
+  float: left;
+  height: 90px;
+  overflow: hidden;
+  padding: 0px 0 10px 0;
+  margin: 5px 15px 0 0px;
+  vertical-align: middle;
+  display: inline-flex;
+  font-size: x-large;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: center;
+  color: #555
 }
-@media (min-width: 600px) {
-    .site-branding-app {
-        float: right;
-        display: flex;
-        text-align: right;
-    }
-}
-
-
-
 
 
 /* site navigation styling */
