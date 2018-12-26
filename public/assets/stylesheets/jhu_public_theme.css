@@ -46,6 +46,10 @@ a {
 .repository-contact {
     padding: 10px;
 }
+.repository-contact .record-type-badge {
+    font-family: 'Gentona', sans-serif;
+    padding: 0;
+}
 
 .site-branding-org {
   float: left;
