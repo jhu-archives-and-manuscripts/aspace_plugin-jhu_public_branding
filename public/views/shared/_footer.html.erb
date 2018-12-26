@@ -32,15 +32,8 @@
         <%= t("plugins.jhu_public_branding.peabody.phone.value").html_safe %>
       </p>
     </div>
+    <div class="span4 powered-by">
+      <p><% if AppConfig[:enable_frontend] %>View <a href="<%= AppConfig[:frontend_proxy_url] %>">Staff Interface</a> | <% end %>Powered by ArchivesSpace <%= ASConstants.VERSION %></p>
+    </div>
   </div>
-  <!--
-  <div class="row">
-     <div class="col-md-12">
-       <p class="footer-items"><a href="<%= AppConfig[:frontend_proxy_url] %>">Staff Interface</a>
-         | Visit <a href="http://archivesspace.org">ArchivesSpace.org</a>
-         | <%= ASConstants.VERSION %>
-         | <% if AppConfig[:feedback_url] && !AppConfig[:feedback_url].blank? %><a id='aspaceFeedbackLink' href='<%= AppConfig[:feedback_url]%>' target='_blank'>Send Feedback or Report a Problem</a><% end %></p>
-     </div>
-  </div>
-  -->
 </div>

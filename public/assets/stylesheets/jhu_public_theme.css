@@ -8,6 +8,30 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     font-family: 'Gentona', sans-serif;
     color: #002D72;
 }
+
+.panel-footer .powered-by {
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    text-align: center;
+    width: auto
+}
+
+.panel-footer #contact_us_block {
+    text-align: left;
+    line-height: 15px;
+}
+.panel-footer #contact_us_block h1 {
+    font-size: inherit;
+    line-height: 20px;
+    margin-top: 0;
+    padding-top: 0;
+}
+@media (max-width: 768px) {
+    .panel-footer .span4 p {
+        text-align: left;
+    }
+}
+
 a {
     color: #002D72;
 }
