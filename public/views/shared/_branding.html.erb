@@ -18,13 +18,11 @@
 
       <!-- collapsible content -->
       <div class="collapse navbar-collapse" id="site-navbar">
-        <div class="container top">
-          <ul class="nav navbar-nav">
-            <% I18n.t("plugins.jhu_public_branding.jhu_nav.links").each do |site| %>
-                <li><%= link_to site[:label], site[:link] %></li>
-            <% end %>
-          </ul>
-        </div>
+        <ul class="nav navbar-nav">
+          <% I18n.t("plugins.jhu_public_branding.jhu_nav.links").each do |site| %>
+              <li><%= link_to site[:label], site[:link] %></li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </nav>

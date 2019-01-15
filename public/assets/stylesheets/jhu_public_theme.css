@@ -96,17 +96,19 @@ a {
 /* site navigation styling */
 
 #site-main-nav {
-    font-family: 'Titling-Gothic', sans-serif;
     background: #002D72;
     color: #BBB;
     border-color: #002D72;
 }
 #navigation {
-    font-family: 'Titling-Gothic', sans-serif;
     color: #002D72;
     border-color: #002D72;
 }
 
+.navbar-brand {
+    display: none;
+    font-family: 'Titling-Gothic', sans-serif;
+}
 
 #site-main-nav .navbar {
     background: #002D72;
@@ -188,9 +190,6 @@ a {
     text-decoration: none;
 }
 
-
-
-
 @media (min-width: 768px) and (max-width: 1000px) {
     #site-main-nav .navbar-brand {
         display: none;
@@ -201,6 +200,29 @@ a {
     }
 }
 @media (max-width: 767px) {
+    .page_actions > .text-right {
+        float: left;
+    }
+    .tabbing.nav-pills > li {
+    	margin: 0;
+    }
+    .tabbing.nav-pills > li:first-child a {
+    	border-top-left-radius: 0;
+    	border-bottom-left-radius: 0;
+    }
+    .tabbing.nav-pills > li:last-child a {
+    	border-top-right-radius: 0;
+    	border-bottom-right-radius: 0;
+    }
+    .site-branding-app {
+        display: none;
+    }
+    .navbar-nav > li {
+        margin-left: 30px;
+    }
+    .navbar-brand {
+        display: block;
+    }
     .navbar-brand:hover {
         font-weight: bold;
         cursor: pointer;

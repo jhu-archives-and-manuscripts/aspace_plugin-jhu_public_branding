@@ -18,21 +18,19 @@
 
       <!-- collapsible content -->
       <div class="collapse navbar-collapse" id="collapsemenu">
-        <div class="container top">
-          <ul class="nav navbar-nav">
-            <%# TODO: add class="active" if we're on that page %>
-            <% $MAIN_MENU.each do |link| %>
-              <li><a href="<%= app_prefix(link[0]) %>"><%= t(link[1]) %></a></li>
-            <% end %>
-            <% unless AppConfig[:pui_hide][:search_tab] %>
-              <li><a href="<%=  app_prefix('/search?reset=true') %>" title="<%= I18n.t('search_tab', :target => t('archive._plural'))%>">
-                <span class="fa fa-search" aria-hidden="true"></span>
-                <span class="sr-only"><%= I18n.t('search_tab', :target => t('archive._plural')) %></span>
-                </a>
-              </li>
-            <% end %>
-          </ul>
-        </div>
+        <ul class="nav navbar-nav">
+          <%# TODO: add class="active" if we're on that page %>
+          <% $MAIN_MENU.each do |link| %>
+            <li><a href="<%= app_prefix(link[0]) %>"><%= t(link[1]) %></a></li>
+          <% end %>
+          <% unless AppConfig[:pui_hide][:search_tab] %>
+            <li><a href="<%=  app_prefix('/search?reset=true') %>" title="<%= I18n.t('search_tab', :target => t('archive._plural'))%>">
+              <span class="fa fa-search" aria-hidden="true"></span>
+              <span class="sr-only"><%= I18n.t('search_tab', :target => t('archive._plural')) %></span>
+              </a>
+            </li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </nav>
