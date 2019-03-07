@@ -1,6 +1,6 @@
 ## Summary
 
-This _incomplete_ plugin is currently targeted to ArchivesSpace 2.x and when complete will implement
+This plugin is currently targeted at ArchivesSpace 2.x and implements
 Johns Hopkins University Sheridan Libraries branding-related customizations to the ArchivesSpace public
 user interface (PUI).
 
@@ -16,7 +16,6 @@ user interface (PUI).
     - Style changes for consistency with other JHU Libraries UX guidelines and/or recommendations
 
   - Header navigation bar:
-    - Contact Us link in upper right header (moved from footer b/c might be harder to notice on long pages)
     - Removed "Accessions", "Classifications", and "Digital Objects" links.
 
   - Footer:
@@ -26,18 +25,13 @@ user interface (PUI).
 - Since DOs link is gone, added some text and links to get visitors to some of
 other key repositories (JScholarship, Levy, and JHU Data Archive).
 
-### Record view:
-- Left-hand in-page anchor navigation: Changed "Components" to "Collection Details"
-- Changed "Components" section heading text to "Collection Details"
-- Changed Component tabs, when visible, to "Collection Details" and "Search this Collection".
-
 ### Breadcrumb:
 - Prefixed resource titles with call number/identifier.
+- Icons for record types.
 
 ### Search results:
 - Added callno/identifier column to results
 - Added column headings, since there are now two columns in the results
-- Added responsive "show/hide facets/filters" to make usable on mobile devices
 
 ---
 
